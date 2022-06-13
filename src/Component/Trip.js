@@ -53,10 +53,8 @@ export default function Trip(){
         <>
         <Card>
           <Card.Body>
-            <Card.Text>
             <h4>Bike: {trip.bikeid} &#40;{trip.usertype}&#41;</h4>
             {trip["start station name"]} - {trip["end station name"]}
-            </Card.Text>
           </Card.Body>
         </Card>
     
