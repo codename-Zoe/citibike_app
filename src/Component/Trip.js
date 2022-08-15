@@ -37,8 +37,9 @@ export default function Trip(){
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(trip)
-    }).then(res=>res.json());
-    navigate(`/trips`);
+    }).then(res=>res.json()).then(()=>{
+      navigate(`/trips`);
+    });
   }
 
   if(loading){
